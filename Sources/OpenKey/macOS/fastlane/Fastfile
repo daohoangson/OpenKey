@@ -1,0 +1,23 @@
+default_platform(:mac)
+
+platform :mac do
+  lane :app do
+    desc "Build developer-id app"
+
+    build_mac_app(
+      project: "OpenKey.xcodeproj",
+      scheme: "OpenKey",
+      export_method:  "developer-id",
+      output_directory: "fastlane/build"
+    )
+
+    # fastlane run notarize package:fastlane/build/OpenKey.app verbose:true api_key_path:fastlane/8PZ24GYZMC.json
+    notarize(
+      package: "fastlane/build/OpenKey.app",
+      api_key_path: "fastlane/8PZ24GYZMC.json"
+    )
+
+    # verified whether the app has been notarized properly
+    # spctl -a -v fastlane/build/OpenKey.app
+  end
+end

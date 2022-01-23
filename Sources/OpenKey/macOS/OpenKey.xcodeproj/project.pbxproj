@@ -377,7 +377,7 @@
 		232EDA4C21F1B33E0085D362 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Tuyen Mai";
 				TargetAttributes = {
 					232EDA5321F1B33E0085D362 = {
@@ -393,14 +393,6 @@
 					};
 					237559B12204156000FB8CB9 = {
 						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 0;
-							};
-						};
-					};
-					2397059023143266002DDEA7 = {
-						CreatedOnToolsVersion = 10.2.1;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -647,6 +639,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 48;
 				DEVELOPMENT_TEAM = C4S4H36U6P;
+				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ModernKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -673,6 +666,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 48;
 				DEVELOPMENT_TEAM = C4S4H36U6P;
+				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ModernKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -714,6 +708,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C4S4H36U6P;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenKeyHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -735,6 +730,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C4S4H36U6P;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenKeyHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
