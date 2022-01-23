@@ -152,7 +152,9 @@ static CFRunLoopSourceRef runLoopSource;
 #pragma mark -AutoUpdate feature
 
 +(void)checkNewVersion:(NSWindow*)parent callbackFunc:(CheckNewVersionCallback) callback {
-    // disable remote check because `OpenKeyUpdate` source code is unavailable
+    // Disable remote check because `OpenKeyUpdate` source code is unavailable.
+    // The `personal` branch has App Sandbox enabled without network capability
+    // (for extra safety) so it wouldn't work anyway.
     return;
 
     //load new version config
